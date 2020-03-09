@@ -1,0 +1,47 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  font-family: 'Proxima Nova Regular', sans-serif;
+  color: #fff;
+}
+a:hover {
+  text-decoration: none;
+}
+.title-1 {
+  font-family: 'Proxima Nova Black', sans-serif;
+  font-size: 48px;
+  text-transform: uppercase;
+  color: #000;
+  margin: 0;
+  text-align: center;
+}
+.header-group {
+  position: relative;
+  padding-bottom: 50px;
+  padding-top: 45px;
+  text-align: center;
+}
+.header-group::after {
+  position: absolute;
+  display: block;
+  content: '';
+  left: 50%;
+  bottom: 0px;
+  margin-left: -15px;
+  height: 30px;
+  width: 30px;
+  background-image: url('/img/icons/x-icon.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center ;
+  color: #000;
+}
+.container__snowboards {
+  margin-bottom: 200px;
+}

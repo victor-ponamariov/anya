@@ -1,0 +1,82 @@
+// main: ../main.less
+
+.slider {
+    height: 760px;
+    width: 100%;
+
+    .slider__item {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 760px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        &.slider__item--1 {
+            background-image: url('../img/slider/slide-1.jpg');
+            color: #000;
+
+        }
+
+        &.slider__item--2 {
+        background-image: url('../img/slider/slide-2.jpg');
+
+        }
+    
+    }
+}
+
+.slider__centered-content {
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+
+.slider__title {
+    font-size: 80px;
+    font-family: 'Proxima Nova Black', sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 60px; 
+
+    &.slider__title--snowboardman {
+        position: relative;
+
+        &:after {
+            position: absolute;
+            display: block;
+            content: '';
+            right: -100px;
+            top: -200px;
+            height: 380px;
+            width: 395px;
+            background-image: url('../img/slider/snowman.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center ;
+        }
+    }
+}
+
+.slider-button {
+    background-color: #000;
+    color: #fff;
+    display: inline-block;
+    padding: 20px 33px;
+    line-height: 1;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: 'Proxima Nova Bold', sans-serif;
+    margin-left: auto;
+    transition: all 0.2s ease-in;
+    cursor: pointer;
+
+}
+
+.slider-button:hover {
+    background-color: #333333;
+}
+
